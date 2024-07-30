@@ -18,6 +18,7 @@
             padding: 10px 20px;
             display: flex;
             align-items: center;
+            justify-content: space-between;
         }
 
         header img {
@@ -28,6 +29,27 @@
         header h1 {
             font-size: 24px;
             margin: 0;
+            color: #00aaff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
             color: #00aaff;
         }
 
@@ -99,19 +121,38 @@
             .feature {
                 width: 100%;
             }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="d8d50be3f2713ab3f0a910fbbbf7cb90.png" alt="Logo">
-        <h1>GameHosting</h1>
+        <div>
+            <img src="d8d50be3f2713ab3f0a910fbbbf7cb90.png" alt="Logo">
+            <h1>MineMigg Network</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Trang Chủ</a></li>
+                <li><a href="/launcher.html">Launcher Minecraft</a></li>
+                <li><a href="/tools.html">Công cụ</a></li>
+                <li><a href="/discord.html">Discord</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="hero">
-        <h2>CLOUD VPS & HOSTING SERVER GAME</h2>
-        <p>Dịch vụ máy chủ đặc biệt dành riêng cho các game thủ, game server.</p>
-        <a href="#">Khám phá Dịch vụ của chúng tôi</a>
+        <h2>MINEMIGG NETWORK</h2>
+        <p>Máy chủ Minecraft sinh tồn 1.20 tuyệt vời của MineMigg.</p>
+        
     </section>
 
     <div class="container">
